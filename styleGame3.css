@@ -1,0 +1,51 @@
+/* Page styling */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background: url();
+  overflow: hidden;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+#bin {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 60px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+#message, #level {
+  margin: 10px;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px black;
+}
+
+.trash {
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease, left 0.2s ease, top 0.2s ease;
+}
+
+.wiggle {
+  animation: wiggle 0.4s infinite alternate;
+}
+
+@keyframes wiggle {
+  from { transform: rotate(-10deg); }
+  to { transform: rotate(10deg); }
+}
